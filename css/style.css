@@ -13,7 +13,6 @@
     padding: 8px 16px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
   
   p {
@@ -25,6 +24,10 @@
     background-color: black;
     color: white;
     padding: 24px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
   
   h1,
@@ -54,24 +57,9 @@
   main {
     background-color: white;
     padding: 32px 72px;
-
-  }
-
-  #destinations{
     display: flex;
-    align-items:flex-start;
-    justify-content: space-evenly;
-    font-size: small;
-
-  }
-
-  #actions{
-    display:flex;
-    display: flex;
-    font-size: small;
-
-    justify-content: flex-end;
-
+    flex-wrap: wrap;
+    justify-content:space-around;
   }
   
   nav button {
@@ -92,6 +80,8 @@
   
   .card-footer {
     font-size: 14px;
+    display:flex ;
+    justify-content: space-between;
   }
   
   .card-footer * {
@@ -101,6 +91,8 @@
   #subnav {
     padding: 32px 72px 0;
     background-color: white;
+    display: flex;
+    justify-content: space-between;
   }
   
   #subnav button {
@@ -117,3 +109,20 @@
     padding: 6px 15px;
   }
   
+  #trending {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #destinations{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+  }
+
+  #actions{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+  }
